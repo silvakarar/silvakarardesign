@@ -1,0 +1,15 @@
+.icons  {
+display: flex;
+justify-content: space-between;  
+align-items: stretch;
+width: 500px;
+}
+.icons li {
+list-style: none;
+}
+
+.dev-icon {
+width: 4rem;
+height: 4rem;
+color: #ffffff; 
+}

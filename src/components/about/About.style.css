@@ -1,41 +1,68 @@
 .About__section {
+  height: 100%;
+  border: 2px solid white;
+}
+
+.iconStyles {
+  width: 80px;
+  height: 80px;
   background: white;
+  border-radius: 50%;
+  padding: 1rem;
+  color:  #ea38d7;
+}
+/* 
+.About__section {
   color: rgb(204, 201, 201);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(180deg, #1f0045, #310b6b);
-  padding: 6rem 4rem;
-  border: none;
+  margin: 50px 10px;
+  border: 2px solid white;
+} */
 
-}
-.profile__pic {
-  width: 16rem;
-  border-radius: 50%;
-  
-}
-.About__left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
- 
-}
-.About__right {
-  background: #6e48d0;
-  padding: 2rem;
-  border-radius: 2rem;
+/* .About__left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  text-align: center;
+  border: 2px solid white;
 }
-.About__right h2 {
- letter-spacing: 0.1rem;
+.About__left h3 {
+  font-size: 3rem;
+  color: white;
 }
-.About__right p {
+.About__left p {
   letter-spacing: 0.1rem;
   font-family: sans-serif;
   font-weight: 100;
+  font-size: 16px;
+  color: white;
+  background-image: linear-gradient(180deg, #1f0045, #310b6b);
+}
+.About__right {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  padding: 10px;
+}
+.About__right span {
+  margin: 5px;
+}
+
+.iconStyles {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 500px) {
+   
  }
+ 

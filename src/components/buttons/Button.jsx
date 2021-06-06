@@ -7,8 +7,7 @@ const Button = props => {
         <button
             target="_blank"
             className="btn "
-            href=""
-            // button={button}
+    
         >
 
                   </button>

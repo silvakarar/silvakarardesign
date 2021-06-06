@@ -1,20 +1,24 @@
 .Header__section {
-  position: relative;
+  /* position: relative; */
   height: 750px;
+  width: 100%;
   overflow: hidden;
   padding: 10rem 0;
+
   /* border: 2px solid white; */
 }
 .textDiv {
 color: #ffffff;
 display: flex;
 flex-direction: column;
-align-content: center;
 justify-content: center;
+align-items: center;
  z-index: 1;
  height: 40vh;
-margin-left: 20px;
-margin-bottom: -90px;
+ width: 100%;
+/* margin-left: 20px;
+margin-bottom: -90px; */
+
 }
 .textDiv h1 {
   font-size: 5rem;
@@ -22,7 +26,24 @@ margin-bottom: -90px;
 .textDiv p {
   font-size: 2rem;
 }
+.header__button {
+  color: rgb(255, 255, 255);
+  border: 2px solid #28c8de;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 20px;
+  width: 20%;
+  margin-top: 0.5rem;
 
+}
+.header__button:hover {
+  outline: none;
+  border: none;
+  background: linear-gradient(to bottom, #f892dc, #ea38d7);
+  color: white;
+}
+
+ 
 .vertical__text {
   animation: updown 4s linear infinite;
 font-size: 0.8rem;
@@ -42,156 +63,57 @@ font-size: 0.8rem;
   }
 }
 
-/* .background-animation {
-position: relative;
-height: 500px;
-overflow: hidden;
-} */
-.box {
-  position: absolute;
-  top: 70%;
-  left: 45%;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #28c8de;
-  animation: boxes 12s ease-in infinite;
-  transform: scale(0);
-}
-.box:nth-child(2) {
-  top: -8%;
-  left: 15%;
-  width: 12px;
-  height: 12px;
-  border-color: #6e48d0;
-  animation-delay: 2s;
-}
-.box:nth-child(3) {
-  top: 30%;
-  left: 65%;
-  width: 14px;
-  height: 14px;
-  border-color:#28c8de;
-  animation-delay: 4s;
-}
-.box:nth-child(4) {
-  top: -5%;
-  left: 80%;
-  width: 16px;
-  height: 16px;
-  border-color: #6e48d0;
-  animation-delay: 6s;
-}
-.box:nth-child(5) {
-  top: 60%;
-  left: 20%;
-  width: 18px;
-  height: 18px;
-  border-color: #28c8de;
-  animation-delay: 8s;
-}
-.box:nth-child(6) {
-  top: -1%;
-  left: 45%;
-  width: 18px;
-  height: 18px;
-  border-color: #6e48d0;
-  animation-delay: 10s;
-}
-.box:nth-child(7) {
-  top: 70%;
-  left: 80%;
-  width: 18px;
-  height: 18px;
-  border-color: #28c8de;
-  animation-delay: 12s; 
-}
-.box:nth-child(8) {
-  top: -7%;
-  left: 17%;
-  width: 18px;
-  height: 18px;
-  border-color: #28c8de;
-  animation-delay: 12s; 
-}
 
-
-
-@keyframes boxes {
-  0% {
-    transform: scale(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(20) rotate(960deg);
-    opacity: 0;
-  }
-}
 .btn {
   color: #ffffff;
   border: 2px solid #28c8de;
 }
-.circle1,
-.circle2,
-.circle3,
-.circle4 {
-  background: white;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.3)
-  );
-  position: absolute;
-  border-radius: 50%;
-  transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
-  animation: bubble-anim 5s ease-out infinite;
- 
-}
 
-.circle1 {
-  top: 100%;
-  right: 10%;
-  height: 10rem;
-  width: 10rem;
-}
-.circle2 {
-  bottom: -10%;
-  left: 40%;
-  height: 20rem;
-  width: 20rem;
-}
-.circle3 {
-    top: 20%;
-    right: 40%;
-    height: 20rem;
-    width: 20rem;
-  }
-  .circle4 {
-    bottom: 100%;
-    left: 10%;
-    height: 10rem;
-    width: 10rem;
-  }
+  /* mediaSm */ 
+  @media screen and (max-width: 500px) {
 
-  
-  @keyframes bubble-anim {
-    0% {
-      transform: scale(1);
+    .Header__section {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+      padding: 10rem 0;
+      /* border: 2px solid white; */
     }
-    20% {
-      transform: scaleY(0.95) scaleX(1.05);
-    }
-    48% {
-      transform: scaleY(1.1) scaleX(0.9);
-    }
-    68% {
-      transform: scaleY(0.98) scaleX(1.02);
-    }
-    80% {
-      transform: scaleY(1.02) scaleX(0.98);
-    }
-    97%, 100% {
-      transform: scale(1);
-    }
-  }
+    .textDiv {
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+       z-index: 1;
+       height: 20vh;
+      /* margin-left: 10px; */
+      /* margin-bottom: -60px; */
+      
+      }
+      .textDiv h1 {
+        font-size: 4rem;
+      }
+      .textDiv p {
+        font-size: 1.5rem;
+      }
+      .header__button {
+        color: rgb(255, 255, 255);
+        border: 2px solid #28c8de;
+        padding: 10px 20px;
+        background-color: transparent;
+        border-radius: 5px;
+        width: 70%;
+        margin-top: 5%; 
+      
+      }
 
+      .header__button:hover {
+        outline: none;
+        border: none;
+        background: linear-gradient(to bottom, #f892dc, #ea38d7);
+        color: white;
+      }
+
+  }
 

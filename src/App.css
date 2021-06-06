@@ -9,7 +9,17 @@
 body {
   /* background: #1d1d1d; */
  background-color:  #1f0045; 
+ width: 100vw;
+ height: 100vh;
 
+}
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 /* .dark-mode {
   background-color: linear-gradient(to right top, #2c4b68, #5a80d3);

@@ -11,8 +11,8 @@ class Form extends Component {
       message: '',
     };
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange = event => {
@@ -45,9 +45,18 @@ class Form extends Component {
     })
   };
 
+
+
   render() {
     return (
       <form className="form">
+                <h1>Contact me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores dolorum repellendus deserunt laborum fugiat expedita
+              voluptatum tenetur obcaecati esse, animi, saepe ut pariatur odit,
+        
+            </p>
         <label htmlFor="name"> Name</label>
         <div className="field">
           <input
@@ -80,7 +89,7 @@ class Form extends Component {
           ></textarea>
         </div>
         <div className="">
-          <button onSubmit={this.handleSubmit} type="submit" className="btn">
+          <button onSubmit={this.handleSubmit} type="submit" className="button">
            Submit
           </button>
         </div>
