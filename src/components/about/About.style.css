@@ -1,68 +1,79 @@
-.About__section {
-  height: 100%;
-  border: 2px solid white;
-}
 
-.iconStyles {
-  width: 80px;
-  height: 80px;
-  background: white;
-  border-radius: 50%;
-  padding: 1rem;
-  color:  #ea38d7;
-}
-/* 
-.About__section {
-  color: rgb(204, 201, 201);
+
+  .about-me-section {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+      }
+
+/* .about-section {
+  height: 100%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin: 50px 10px;
-  border: 2px solid white;
+  padding: 2rem 0rem;
+ 
 } */
 
-/* .About__left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 2px solid white;
+.bio-information {
+  background-color: #fff;
+  margin-top: 8rem;
+  width: 100vw;
 }
-.About__left h3 {
-  font-size: 3rem;
-  color: white;
-}
-.About__left p {
-  letter-spacing: 0.1rem;
-  font-family: sans-serif;
-  font-weight: 100;
-  font-size: 16px;
-  color: white;
-  background-image: linear-gradient(180deg, #1f0045, #310b6b);
-}
-.About__right {
-  color: white;
+.about-title {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: 2px solid white;
-  padding: 10px;
 }
-.About__right span {
-  margin: 5px;
+.about-title h2 {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: -30px;
 }
-
 .iconStyles {
-  width: 30px;
-  height: 30px;
-  background: white;
+  width: 70px;
+  height: 70px;
+  background-color: #000;
   border-radius: 50%;
-  padding: 5px;
+  font-weight: 700;
+  padding: 1rem;
+  color: white;
+  border: 1px solid #000;
+  margin: 1rem 0rem;
 }
 
-/* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 500px) {
-   
- }
- 
+
+.quote {
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-top: 6rem;
+  background: #e2d8d8;
+  padding: 4rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+}
+/* .quote figcaption,
+.quote blockquote {
+  margin: 1em;
+} */
+.quote p {
+  font-weight: 400;
+  color: #5a5555;
+}
+.quote span {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+
+/* mediaSm */ 
+@media screen and (max-width: 500px) {
+  .about-me-section {
+margin-top: 6rem;
+  }
+
+}

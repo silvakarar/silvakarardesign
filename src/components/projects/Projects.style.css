@@ -1,39 +1,36 @@
-.projects__section {
-  background-image: linear-gradient(
-    180deg
-    , #1f0045, #310b6b); 
-    /* margin-bottom: 4rem;
-    margin-top: 4rem; */
-   border: none;
+.projects-section {
+  border: none;
+  margin: 6rem 1rem;
+  width: 100vw;
 }
-hr {
-  width: 30%;
+.projects-section hr {
+margin: auto;
+  width: 10%;
   height: 0.1rem;
   margin-top: 1rem;
-
-  align-self: flex-start;
-  background-color: #28c8de;
+  margin-bottom: 2rem;
+  background-color:  #000;
  
 }
-.projects__section h2 {
-  color: white;
+.projects-section h2 {
+  text-align: center;
+  color: #000;
   font-size: 3rem;
- 
 }
 .project-cards {
- width: 300px;
- height: 400px;
- background: white;
- transition: 0.5s;
- margin-left: 15px;
- margin-right: 15px;
+  width: 300px;
+  height: 400px;
+  background-color: #c5a47f;
+  transition: 0.5s;
+  /* margin-left: 10px;
+  margin-right: 10px; */
 }
 .project-cards:hover {
-  box-shadow: 0 30px 50px rgba(0,0,0,0,0.2);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0, 0.2);
 }
 .face {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -43,85 +40,118 @@ hr {
   flex-direction: column;
 }
 .face1 {
-  padding: 20px;
+  padding: 2rem 2rem;
   text-align: center;
-  background-color: white;
-  color: #424645; 
+  background: #e2d8d8;
+ 
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  box-shadow: rgba(0, 0, 0, 0, 0.8);
+  color: rgb(22, 21, 21);
 }
 .face1 h2 {
-  margin-top: 80px;
+  margin-top: 10px;
+  font-size: 2rem;
 }
-
+.face1 p {
+  font-size: 1rem;
+}
 .face1 a {
   display: inline-block;
   margin-top: 20px;
-  padding: 5px 10px;
+  padding: 0.4rem 0.6rem;
   text-decoration: none;
-  text-transform: uppercase;
-  border: 2px solid #28c8de;
-  font-weight: bold;
+  border: 1px solid  #fff;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
   transition: 0.3s;
-  color: #424645; 
+  color:  #18181a;
+  background-color: white;
+
 }
 
 .face2 {
-  /* background-color: #28c8de; */
-  background-image: linear-gradient(
-    180deg
-    , #1f0045, #310b6b);  
-  transition: 0.5s;  
+  background-color: #f0ece8;
+/* background: #e2d8d8; */
+box-shadow: rgba(0, 0, 0, 0, 0.25);
+  transition: 0.5s;
+  padding: 2rem 2rem;
 }
 
 .face2 h2 {
-  color: white;
-  font-size: 120px;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
   transition: 0.5s;
 }
 
 .project-cards:hover .face2 {
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  top: 40px;
+  top: 20;
   left: 50%;
+  right: 50%;
   transform: translateX(-50%);
-  background-color:  transparent;
-  /* border: 2px solid  #28c8de; */
+  background-color: transparent;
+  border: 2px solid  #000;
   font-size: 20px;
+  padding: 2rem;
+  margin-top: 5px;
 }
 .project-cards:hover .face2 h2 {
   display: flex;
   background-color: transparent;
   justify-content: center;
   align-items: center;
-  color:  #ffffff;
+  color: rgb(32, 31, 31);
   font-size: 36px;
+
 }
+
 .content a {
   margin: 0.5rem;
 }
-a:hover {
-  background-color:  #28c8de;
-  color: white;
-  border-radius: 5px; 
-  /* padding: 10px 20px; */ 
+.content a:hover {
+  background-color: #1c1b1d;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+
 }
 
+/* mediaSm */
+@media screen and (max-width: 812px) {
 
-/* mediaSm */ 
-@media screen and (max-width: 500px) {
-  .projects__section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
+  .projects-section {
+    border: none;
+    width: 100vw;
+    margin: 0;
+   
   }
+ .projects-title {
+   margin-bottom: 4rem;
+ }
+
+  .col .col-sm {
+    margin: 0;
+  }
+
  
-  .projects__section h2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+/* mediaSm */
+@media screen and (min-width: 813px) {
+
+  .projects-section {
+    border: none;
+    width: 100vw;
+    margin: 0;
+   
+  }
+ .projects-title {
+   margin-bottom: 4rem;
+ }
+
+  .col .col-sm {
+    margin: 0;
   }
 }

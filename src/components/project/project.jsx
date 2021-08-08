@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const Project = ({}) => (
-   <div></div>
+const Project = ({Heading, Description, Link}) => (
+   <div className="content">
+   <h2>{Heading} </h2>
+      <p>{Description }</p>
+
+ </div>
        
 )
 
-export default project
+export default Project

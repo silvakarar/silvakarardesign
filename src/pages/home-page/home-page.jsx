@@ -5,10 +5,12 @@ import Projects from '../../components/projects/Projects';
 import About from '../../components/about/About';
 import Footer from '../../components/footer/Footer';
 
+
 const HomePage = () => {
   return (
     <div>
       <Navbar />
+      <br />
       <Header />
       <br />
       <Projects />

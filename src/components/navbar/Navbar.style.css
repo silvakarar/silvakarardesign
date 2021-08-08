@@ -1,7 +1,56 @@
-.Navbar__section {
-    /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  height: 50px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+ 
+}
+.navbar-custom {
+  background-color: #000000;
+}
+.navbar-custom .navbar-brand {
   color: white;
 }
-.Navbar__section a {
-  color: white;
+.navbar-custom .navbar-nav > li > a {
+  color: #FFF;
+}
+.navbar-expand-lg .navbar-collapse {
+  background-color: black;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+@media screen and (max-width: 500px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    height: 50px;
+   
+  }
+  .navbar-toggler-icon {
+    color: white;
+  }
+  .navbar-custom {
+    background-color: #000000;
+  }
+ 
+.nav .navbar .navbar-expand-lg {
+    background-color: rgb(255, 255, 255);
+  }
+  .collapse .navbar-collapse {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 500px){
+
+  .navbar-toggler-icon {
+
+
+  }
 }

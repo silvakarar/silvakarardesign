@@ -1,25 +1,16 @@
 import React from 'react';
-import Button from '../buttons/Button';
-import Form from '../forms/Form';
-import './Footer.style.css';
-import { AiFillLinkedin } from 'react-icons/ai';
-import { AiFillTwitterSquare } from 'react-icons/ai';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { IoLogoTwitter } from 'react-icons/io';
 import { AiOutlineMail } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
 import { useHistory } from 'react-router-dom';
-import ContactFormPage from '../../pages/contact-form-page/contact-form-page';
+import './Footer.style.css';
 
-//React router handle onclick event
 const Footer = () => {
-
-  let history = useHistory();
-  const redirect = () => {
-    history.push('/contact-form-page')
-  }
   return (
-    <div class=" Footer__section">
-      <hr/>
-      <div class="row ">
-        <div class="col-sm Contact">
+    <div class=" Footer-section " id="footer">
+      <div class="row m-0">
+        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12 Contact">
           <h2>Contact</h2>
           <div className="Social">
             <a
@@ -27,30 +18,33 @@ const Footer = () => {
               className="footer-link"
               target="_blank"
             >
-              <AiFillLinkedin className="iconStyles " />
+              <AiOutlineLinkedin className="iconStyles2 " />
             </a>
             <a
               href="https://twitter.com/silva_karar"
               className="footer-link"
               target="_blank"
             >
-              <AiFillTwitterSquare className="iconStyles " />
+              <IoLogoTwitter className="iconStyles2 " />
             </a>
             <a
               href="mailto:silvarkarar@gmail.com"
               className="footer-link"
               target="_blank"
             >
-              <AiOutlineMail className="iconStyles " />
+              <AiOutlineMail className="iconStyles2 " />
+            </a>
+            <a
+              href="https://github.com/silvakarar"
+              className="footer-link"
+              target="_blank"
+            >
+              <AiFillGithub className="iconStyles2 " />
             </a>
           </div>
         </div>
       </div>
-      <div className="Footer">
-        <button target={"_blank"}  className="Footer__button" onClick={redirect}  >
-          Get in Touch
-        </button>
-      </div>
+      <div className="Footer"></div>
     </div>
   );
 };
