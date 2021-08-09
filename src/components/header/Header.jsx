@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Profile from '../../assets/myAvatar.png';
+import Profile from '../../assets/by silva karar.jpg';
 import { CgShapeTriangle } from 'react-icons/cg';
 import { CgShapeZigzag } from 'react-icons/cg';
 import { CgShapeRhombus } from 'react-icons/cg';
@@ -25,9 +25,8 @@ const Header = props => {
   
     <div class=" Header-section" id="header">
       <div class="row ">
-        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6 px-0">
           <div className="textDiv">
-            <img src={Profile} alt="profile" className="profile-img" />
             <h1>
               Hi, I'm <span> {text}</span>
             </h1>
@@ -61,6 +60,12 @@ const Header = props => {
   </div>
   
         </div>
+        <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6 px-0">
+          <div className="profile-image">
+            <img src={Profile} alt="profile" className="profile-img" />
+          
+          </div>
+          </div>
       </div>
     </div>
   );
