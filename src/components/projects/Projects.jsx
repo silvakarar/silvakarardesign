@@ -12,7 +12,7 @@ import './Projects.style.css';
 
 const Projects = props => {
   return (
-    <section className="projects-section " id="projects">
+    <section className="projects-section " >
       <div className="projects-title">
         <h2>My Projects</h2>
         <hr />
@@ -22,17 +22,11 @@ const Projects = props => {
           <div className="col col-sm m-1">
             <div className="project-cards ">
               <div className="face face1">
-                <div className="content">
+                <div className="project-content">
                   <Project
                     Heading="Ninja Wars"
                     Description="Online turn based board game build with JavaScript"
                   ></Project>
-                  <a
-                    href="https://silvakarar.github.io/javascript--turn-based-board-game/"
-                    target="_blank"
-                  >
-                    Project Link
-                  </a>
                   <a
                     href="https://github.com/silvakarar/javascript--turn-based-board-game"
                     target="_blank"
@@ -51,7 +45,7 @@ const Projects = props => {
           <div className="col col-sm m-1">
             <div className="project-cards ">
               <div className="face face1">
-                <div className="content">
+                <div className="project-content">
                   <Project
                     Heading="Restaurant App"
                     Description="    Restaurant Review site with Google Maps API. Build with React"
@@ -77,7 +71,7 @@ const Projects = props => {
           <div className="col col-sm m-1">
             <div className="project-cards ">
               <div className="face face1">
-                <div className="content">
+                <div className="project-content">
                   <Project
                     Heading="Online Store"
                     Description="React project with firebase firestore storage"
@@ -103,7 +97,7 @@ const Projects = props => {
           <div className="col col-sm m-1">
             <div className="project-cards ">
               <div className="face face1">
-                <div className="content">
+                <div className="project-content">
                   <Project
                     Heading="Glass Form"
                     Description="Glassmorphims React Form with Google authentication."
@@ -129,7 +123,7 @@ const Projects = props => {
           <div className="col col-sm m-1">
             <div className="project-cards ">
               <div className="face face1">
-                <div className="content">
+                <div className="project-content">
                   <Project
                     Heading="AI Face Recognition App"
                     Description="Face regocnition app with AI face dectection API."
@@ -158,7 +152,7 @@ const Projects = props => {
           <div className="col col-sm m-1">
             <div className="project-cards ">
               <div className="face face1">
-                <div className="content">
+                <div className="project-content">
                   <Project
                     Heading="Film Festival"
                     Description="Boston outdoor Film Festival"
@@ -187,7 +181,7 @@ const Projects = props => {
           <div className="col col-sm m-1">
             <div className="project-cards ">
               <div className="face face1">
-                <div className="content">
+                <div className="project-content">
                   <Project
                     Heading="Classic Quotegenerator"
                     Description="JavaScript quote generator"

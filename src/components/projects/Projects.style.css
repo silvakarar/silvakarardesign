@@ -88,7 +88,7 @@
   top: 20;
   left: 50%;
   right: 50%;
-  transform: translateY(-3px) translateX(-25px);
+  transform: translateY(-1px) translateX(-30px);
   background-color: transparent;
   border: 2px solid #000;
   font-size: 20px;
@@ -103,17 +103,15 @@
   color: rgb(32, 31, 31);
   font-size: 36px;
 }
-.content {
+.project-content {
   display: flex;
   flex-direction: column;
-
 }
-.content a {
+.project-content a {
   align-items: center;
   margin: 0.5rem;
-
 }
-.content a:hover {
+.project-content a:hover {
   background-color: #1c1b1d;
   color: rgb(255, 255, 255);
   border-radius: 5px;
@@ -137,14 +135,16 @@
   }
 }
 /* mediaSm */
-@media screen and (min-width: 813px) {
+@media screen and (max-width: 500px) {
   .projects-section {
     border: none;
     width: 100vw;
     margin: 0;
+ 
   }
   .projects-title {
     margin-bottom: 4rem;
+    margin-top: -4rem;
   }
 
   .col .col-sm {

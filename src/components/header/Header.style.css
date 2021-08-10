@@ -43,6 +43,8 @@
 }
 .profile-image {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .profile-img {
   width: 800px;
@@ -166,22 +168,22 @@
 .Header-section {
   margin-top: -30px;
 }
-.Header-section:hover {
+/* .Header-section:hover {
 background-color: black;
 color: white;
-}
+} */
 
 .textDiv:hover {
  color: white;
 }
   .textDiv {
     display: flex;
-    justify-content: center;
+    justify-content:flex-start ;
     align-items: center;
   }
   .textDiv h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-top: 1rem;
   }
@@ -192,5 +194,12 @@ color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 200;
+  }
+
+  .profile-image {
+    margin-top: -50px;
+  }
+  .profile-img {
+    height: 400px;
   }
 }
